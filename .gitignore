@@ -65,3 +65,6 @@ public
 dist/
 .idea
 .vscode
+
+# i18n extraction scratch directory (see Makefile i18n.extract)
+/temp

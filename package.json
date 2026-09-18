@@ -55,6 +55,7 @@
     "@babel/eslint-parser": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@edx/eslint-config": "^4.0.0",
+    "@openedx/frontend-build": "^14.6.17",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.0.0",
     "autoprefixer": "^9.4.5",
@@ -85,7 +86,8 @@
     "test": "jest --verbose --coverage --passWithNoTests",
     "lint": "eslint --ext .js --ext .jsx .",
     "clean": "gatsby clean",
-    "shell": "gatsby repl"
+    "shell": "gatsby repl",
+    "i18n_extract": "fedx-scripts formatjs extract"
   },
   "repository": "https://github.com/openedx/frontend-app-learner-portal-programs"
 }
