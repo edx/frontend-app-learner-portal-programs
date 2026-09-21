@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import 'regenerator-runtime/runtime';
-import { messages } from '@edx/frontend-component-footer-edx';
+import { messages as footerMessages } from '@edx/frontend-component-footer-edx';
 import { AppProvider } from '@edx/frontend-platform/react';
 import {
   configure as configureAuth,
@@ -27,6 +27,7 @@ import {
   configure as configureI18n,
 } from '@edx/frontend-platform/i18n';
 
+import appMessages from './src/i18n';
 import store from './src/store';
 
 // eslint-disable-next-line react/display-name,react/prop-types,func-names
@@ -58,7 +59,7 @@ export default function ({ children }) {
 
     // Internationalization
     configureI18n({
-      messages,
+      messages: [footerMessages, ...appMessages],
       config: getConfig(),
       loggingService: getLoggingService(),
     });

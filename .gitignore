@@ -65,3 +65,10 @@ public
 dist/
 .idea
 .vscode
+
+# i18n extraction scratch directory (see Makefile i18n.extract)
+/temp
+
+# translation catalogs pulled at build time via `make pull_translations` (see src/i18n/index.js)
+src/i18n/messages/
+src/i18n/transifex_input.json
